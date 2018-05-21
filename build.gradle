@@ -37,8 +37,8 @@ compileTestKotlin {
 
 repositories {
     mavenCentral()
+    jcenter()
 }
-
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-cache')
@@ -46,5 +46,13 @@ dependencies {
     compile('com.fasterxml.jackson.module:jackson-module-kotlin')
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     compile("org.jetbrains.kotlin:kotlin-reflect")
+    compile('io.springfox:springfox-swagger2:2.8.0')
+    compile('io.springfox:springfox-swagger-ui:2.8.0')
+    compile 'io.arrow-kt:arrow-core:0.7.1'
+    compile 'io.arrow-kt:arrow-syntax:0.7.1'
+    compile 'io.arrow-kt:arrow-typeclasses:0.7.1'
+    compile 'io.arrow-kt:arrow-data:0.7.1'
+    compile 'io.arrow-kt:arrow-instances-core:0.7.1'
+    compile 'io.arrow-kt:arrow-instances-data:0.7.1'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
